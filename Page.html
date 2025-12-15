@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>TEHNO-WOOD</title>
+</head>
+<body>
+    <style>
+        .hero {
+            position: relative;
+            height: 600px;
+            background: url("img/hero.jpg") center/cover no-repeat;
+        }
+
+            .hero::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: rgba(0,0,0,.45);
+            }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            padding-left: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+        }
+
+            .hero-content h1 {
+                font-size: 48px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+            }
+
+        .hero-btn {
+            padding: 14px 28px;
+            background: #fff;
+            color: #000;
+            font-size: 13px;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .hero-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+            .hero-arrow.left {
+                left: 40px;
+            }
+
+            .hero-arrow.right {
+                right: 40px;
+            }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="img/logo.png" alt="TW">
+                <div class="logo-text">
+                    <b>TEHNO-WOOD</b>
+                    мебельная фабрика
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#" class="active">РАБОТЫ</a>
+                <a href="#">ОБЪЕКТЫ</a>
+                <a href="#">МАТЕРИАЛЫ</a>
+                <a href="#">О КОМПАНИИ</a>
+                <a href="#">КОНТАКТЫ</a>
+            </nav>
+            <div class="phone">
+                <div class="phone-number">8 (800) 222-65-05</div>
+                <a href="#" class="callback">ОБРАТНЫЙ ЗВОНОК</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Мебель<br>индивидуального<br>исполнения</h1>
+            <a href="#" class="hero-btn">ОСТАВИТЬ ЗАЯВКУ</a>
+        </div>
+        <div class="hero-arrow left">‹</div>
+        <div class="hero-arrow right">›</div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-inner">
+            <h2>Tehno-Wood в цифрах</h2>
+            <div class="stats-list">
+                <div class="stat"><span class="line"></span><b>6</b><p>производственных направлений</p></div>
+                <div class="stat"><span class="line"></span><b>10</b><p>лет на рынке</p></div>
+                <div class="stat"><span class="line"></span><b>1500</b><p>значимых объектов</p></div>
+                <div class="stat"><span class="line"></span><b>6000<span>м²</span></b><p>производственной площади</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="principles">
+        <div class="principles-inner">
+            <h2>Принципы нашей работы</h2>
+            <div class="principles-content">
+                <div class="principles-gallery">
+                    <img src="img/p1.jpg">
+                    <img src="img/p2.jpg">
+                    <img src="img/p3.jpg">
+                </div>
+                <div class="principles-list">
+                    <div class="item"><span>01</span>Использование только качественного материала и фурнитуры</div>
+                    <div class="item"><span>02</span>Клиентоориентированность и мобильность</div>
+                    <div class="item"><span>03</span>Жесткий контроль качества и доставки продукции</div>
+                    <div class="item"><span>04</span>Мгновенное реагирование на требования заказчиков</div>
+                    <div class="item"><span>05</span>Многопрофильное производство по принципу «всё включено»</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="categories-inner">
+            <div class="categories-header">
+                <h2>Изготовление мебели<br>по индивидуальному исполнению</h2>
+                <div class="categories-text">
+                    <span class="line"></span>
+                    <p>Мебельная фабрика Техно-Вуд с 2010 года занимается оснащением учреждений образования, здравоохранения и силовых ведомств качественной современной мебелью.</p>
+                    <p>Важным конкурентным преимуществом нашей фабрики является наличие разных направлений в производстве мебели.</p>
+                </div>
+            </div>
+
+            <div class="categories-grid">
+                <a class="cat large" style="background-image: url('img/v1.jpg')"><span>Гос. контракты</span><i>Подробнее →</i></a>
+                <a class="cat tall" style="background-image: url('img/v2.jpg')"><span>Входная группа<br>и хранение</span><i>Подробнее →</i></a>
+                <a class="cat" style="background-image: url('img/v3.jpg')"><span>Кухонная зона</span><i>Подробнее →</i></a>
+                <a class="cat" style="background-image: url('img/v4.jpg')"><span>Мягкая мебель</span><i>Подробнее →</i></a>
+                <a class="cat" style="background-image: url('img/v5.jpg')"><span>Офисная мебель</span><i>Подробнее →</i></a>
+                <a class="cat" style="background-image: url('img/v6.jpg')"><span>Мебель для гостиной</span><i>Подробнее →</i></a>
+                <a class="cat wide" style="background-image: url('img/v7.jpg')"><span>Детские комнаты</span><i>Подробнее →</i></a>
+                <a class="cat wide" style="background-image: url('img/v8.jpg')">$1</a>
+                <a class="cat wide" style="background-image: url('img/v9.jpg')"><span>Торгово-выставочное оборудование</span><i>Подробнее →</i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="process-inner">
+            <div class="process-head">
+                <h2>Как мы<br>производим мебель</h2>
+                <div class="process-text">
+                    <span class="line"></span>
+                    <p>Производственный цех расположен в Кстовском районе, Нижегородской области и занимает более 6000 м².</p>
+                    <p>Наличие многофункционального современного оборудования и хорошо развитой логистической сети позволяет минимизировать человеческий фактор при выпуске продукции и осуществлять отгрузки нашим партнерам и клиентам точно в указанные сроки.</p>
+                </div>
+            </div>
+
+            <div class="process-media" style="background-image: url('img/v10.png')">
+                <div class="process-play">▶</div>
+                <div class="process-caption">Нажмите, чтобы посмотреть<br>видео о производстве</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="realize">
+        <div class="realize-inner">
+            <div class="realize-form">
+                <h3>Реализуем ваши идеи</h3>
+                <p>Пришлите нам свой эскиз или опишите задумку и мы воплотим ее в жизнь в самые кратчайшие сроки</p>
+                <input type="text" placeholder="Телефон">
+                <textarea placeholder="Ваш комментарий"></textarea>
+                <label class="file">Прикрепить файл</label>
+                <button>Отправить</button>
+                <span class="agree">Даю согласие на обработку моих персональных данных</span>
+            </div>
+            <div class="realize-image">
+                <img src="img/v11.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="scheme">
+        <div class="scheme-inner">
+            <h2>Схема работы</h2>
+
+            <div class="scheme-row">
+                <div class="scheme-item">
+                    <span class="num">01</span>
+                    <p>Оставляете нам заявку<br>на сайте или звоните</p>
+                </div>
+                <span class="scheme-line"></span>
+
+                <div class="scheme-item">
+                    <span class="num">02</span>
+                    <p>Наш специалист выезжает<br>к вам на замер</p>
+                </div>
+                <span class="scheme-line"></span>
+
+                <div class="scheme-item">
+                    <span class="num">03</span>
+                    <p>Мы составляем смету,<br>учитывая все ваши пожелания</p>
+                </div>
+                <span class="scheme-line"></span>
+
+                <div class="scheme-item">
+                    <span class="num">04</span>
+                    <p>Согласовываем сроки,<br>стоимость и заключаем договор</p>
+                </div>
+            </div>
+
+            <div class="scheme-row bottom">
+                <div class="scheme-item">
+                    <span class="num">05</span>
+                    <p>Приступаем к работе</p>
+                </div>
+                <span class="scheme-line"></span>
+
+                <div class="scheme-item">
+                    <span class="num">06</span>
+                    <p>По завершении работы<br>— ее прием и оплата</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="objects">
+        <div class="objects-inner">
+            <h2>Наши объекты</h2>
+
+            <div class="objects-slider">
+                <div class="object small" style="background-image: url('img/obj1.jpg')">
+                    <div class="object-caption">
+                        <b>ГКУ «Технический центр департамента культуры»</b>
+                        <span>г. Москва</span>
+                    </div>
+                </div>
+
+                <div class="object large active" style="background-image: url('img/obj2.jpg')">
+                    <div class="object-caption">
+                        <b>Студия мебели Техно-Вуд</b>
+                        <span>г. Геленджик</span>
+                    </div>
+                </div>
+
+                <div class="object small" style="background-image: url('img/obj3.jpg')">
+                    <div class="object-caption">
+                        <b>ЖК «Изумрудный замок»</b>
+                        <span>г. Нижний Новгород</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="objects-dots">
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="partners-inner">
+            <h2>С нами работают</h2>
+
+            <div class="partners-grid">
+                <img src="img/logo1.png" alt="">
+                <img src="img/logo2.png" alt="">
+                <img src="img/logo3.png" alt="">
+                <img src="img/logo4.png" alt="">
+                <img src="img/logo5.png" alt="">
+                <img src="img/logo6.png" alt="">
+                <img src="img/logo7.png" alt="">
+                <img src="img/logo8.png" alt="">
+                <img src="img/logo9.png" alt="">
+                <img src="img/logo10.png" alt="">
+            </div>
+
+            <div class="partners-dots">
+                <span></span>
+                <span class="active"></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="geo">
+        <div class="geo-map">
+            <img src="img/map-russia.png" alt="География заказчиков">
+        </div>
+    </section>
+
+    <section class="letters">
+        <h2>Благодарственные письма</h2>
+
+        <div class="letters-row">
+            <div class="arrow left">‹</div>
+
+            <div class="letters-list">
+                <div class="letter"><img src="img/letter.jpg" alt=""></div>
+                <div class="letter"><img src="img/letter.jpg" alt=""></div>
+                <div class="letter"><img src="img/letter.jpg" alt=""></div>
+                <div class="letter"><img src="img/letter.jpg" alt=""></div>
+            </div>
+
+            <div class="arrow right">›</div>
+        </div>
+
+        <div class="pagination">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+        </div>
+    </section>
+
+    <section class="contacts-map">
+        <div class="contacts">
+            <h3>Свяжитесь с нами любым<br>удобным способом</h3>
+
+            <ul>
+                <li>📞 8 (83145) 2-46-11</li>
+                <li>✉ tehno-wood@mail.ru</li>
+                <li>📍 г. Кстово, Типографский проезд, 11а</li>
+            </ul>
+
+            <div class="form">
+                <input type="text" placeholder="+7(___) ___-__-__">
+                <button>Отправить</button>
+
+                <label>
+                    <input type="checkbox">
+                    Даю согласие на обработку моих персональных данных
+                </label>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=44.195%2C56.147&z=13"
+                    frameborder="0">
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="TEHNO-WOOD">
+                <span>мебельная фабрика</span>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#">Работы</a>
+                <a href="#">Объекты</a>
+                <a href="#">Материалы</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+            </nav>
+
+            <div class="footer-contacts">
+                <div class="phone">📞 8 (800) 222-65-05</div>
+                <div class="callback">Обратный звонок</div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
